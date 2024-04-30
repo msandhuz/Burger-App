@@ -1,0 +1,69 @@
+.SideDrawer {
+    position: fixed;
+    width: 280px;
+    max-width: 70%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 200;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.SideDrawer.Open {
+    transform: translateX(0);
+}
+
+.SideDrawer.Close {
+    transform: translateX(-100%);
+}
+
+.BurgerDisplay {
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+/* Adjusted styles for navigation links */
+nav a {
+    text-decoration: none;
+    color: #703B09;
+    padding: 12px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #eee;
+    color: #502E12;
+}
+
+/* Specific styles for the close button */
+button {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    color: #703B09;
+    background: none;
+    border: 2px solid #703B09;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #703B09;
+    color: white;
+}

@@ -1,0 +1,19 @@
+.Burger {
+    width: 100%;
+    margin: auto;
+    height: auto; /* adjusted for dynamic ingredient height */
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 500px) and (min-height: 401px) {
+    .Burger {
+        width: 450px;
+        height: auto; /* adjusted for dynamic ingredient height */
+    }
+}
